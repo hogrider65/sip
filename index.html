@@ -96,89 +96,21 @@ ul {
         background-color: #4d4d4d;
       }
       @media only screen and (max-width: 600px) {
-        body {
-  display: flex;
-  height: 100vh; /* Ensures the container fills the entire viewport height */
-  margin: 0; /* Removes default body margin */
-  background-color: #212121;
-}
+body {
+        height: auto; /* Reset the height */
+      }
 
-.container {
-   display: flex;
-  flex-direction: column; /* Arrange rows in a column layout */
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Optional - adjust the height according to your layout */
-}
+      .container {
+        height: auto; /* Reset the height */
+      }
 
-.centered-button {
- margin:10px;
-  border: none;
-  outline: none;
-  background-color: #ff002b;
-  padding: 15px 25px;
-  font-size: 8px;
-  font-weight: 600;
-  color: #fff;
-  border-radius: 15px;
-  transition: all ease 0.1s;
-  box-shadow: 0px 6px 0px 0px #ff5362;
-}
-
-.centered-button:active {
-  transform: translateY(5px);
-  box-shadow: 0px 0px 0px 0px #ff5362;
-}
-.centered-button:hover{
-  background-color: #e71919;
-}
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-        
-ul {
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-  
+      .centered-button {
+        /* Update your button styles for smaller screens */
+        padding: 15px 25px;
+        font-size: 8px;
+        font-weight: 600;
       }
-      
-      li {
-        float: left;
-        
-      }    
-      
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        border-radius: 10px;
-      }
-       
-      
-      li a:hover:not(.active) {
-        background-color: #111;
-  
-      }
-      
-      .active {
-        background-color: #8b8b8b;
-      }
-      .active:hover{
-        background-color: #4d4d4d;
-      }
-}
+    }
 </style>
 
 <button onclick="enableLink()" class="ss">Click me</button>
