@@ -95,6 +95,26 @@ ul {
       .active:hover{
         background-color: #4d4d4d;
       }
+  
+  .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the row horizontally */
+}
+
+.centered-button {
+  /* Add your button styles here */
+  flex-basis: calc(25% - 20px); /* Adjust the width for four columns */
+  margin: 10px; /* Optional - add margin between buttons */
+}
+
+
+  
+  
       @media only screen and (max-width: 600px) {
            body {
         height: auto; /* Reset the height */
@@ -104,11 +124,7 @@ ul {
         height: auto; /* Reset the height */
       }
 
-      .row {
-        
-           flex-direction: column;
-    align-items: flex-start;
-      }
+    
 
       .centered-button {
         /* Update your button styles for smaller screens */
@@ -116,6 +132,15 @@ ul {
         padding: 15px 25px;
         font-size: 14px;
         font-weight: 600;
+         flex-basis: calc(50% - 20px); /* Adjust the width for two columns on smaller screens */
+        }
+         
+        .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
       }
     }
 </style>
