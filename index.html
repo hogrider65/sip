@@ -107,18 +107,17 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 0vh; /* Ensures the container fills the entire viewport height */
+  height: 100vh; /* Ensures the container fills the entire viewport height */
   margin: 0; /* Removes default body margin */
   background-color: #212121;
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap; /* Enable wrapping to create rows and columns */
+   display: flex;
+  flex-direction: column; /* Arrange rows in a column layout */
   justify-content: center;
   align-items: center;
-  height: 50%; 
-
+  height: 100vh; /* Optional - adjust the height according to your layout */
 }
 
 .centered-button {
