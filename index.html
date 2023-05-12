@@ -24,12 +24,12 @@
 </html>
 <style>
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Ensures the container fills the entire viewport height */
-  margin: 0; /* Removes default body margin */
-  background-color: #212121;
+ display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Ensures the container fills the entire viewport height */
+      margin: 0; /* Removes default body margin */
+      background-color: #212121;
 }
 
 
@@ -96,12 +96,17 @@ ul {
         background-color: #4d4d4d;
       }
       @media only screen and (max-width: 600px) {
-body {
+      body {
         height: auto; /* Reset the height */
       }
 
       .container {
         height: auto; /* Reset the height */
+      }
+
+      .row {
+        flex-wrap: nowrap; /* Prevent wrapping to maintain single row */
+        flex-direction: column; /* Stack buttons vertically */
       }
 
       .centered-button {
