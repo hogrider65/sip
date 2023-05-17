@@ -234,15 +234,17 @@ display: flex;
   background-color: #e71919;
 }
   @media only screen and (max-width: 600px) {
-  #buttonss{
-  display: flex;
-  flex-direction: column; /* Arrange rows in a column layout */
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Optional - adjust the height according to your layout */
-  gap: 30px;
-  column-gap: 30px;
-}
+section {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Create 4 columns */
+      gap: 20px; /* Set the gap between columns */
+    }
+    .row{
+        display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+    }
 
 }
 </style>
